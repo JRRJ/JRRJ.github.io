@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="resources/style.css"/>
+        <title>Mandelbrot Experiments</title>
+    </head>
+    <body>
+        <header class="borderDecoration">
+                <h1>John Jenson</h1>
+                <h2>Freelance Programmer and Web Developer</h2>
+        </header>
+        <div class="container">            
+            <nav class="borderDecoration">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a>
+                        <ul>
+                            <li><a href="odin_project.html">Odin Project</a></li>
+                            <li><a href="mandelbrot_demos.html">Mandelbrot Demos</a></li>
+                            <li><a href="lavaman.html">Lavaman Game</a></li>
+                            <li><a href="star_generator.html">Star Generator</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="spacer"></div>
+            <main class="borderDecoration"> 
+                <h2>Mandelbrot Set Experiments</h2>
+                <img src="resources/mandelbrot.jpg"/>
+                <p><a href="https://en.wikipedia.org/wiki/Mandelbrot_set">The Mandelbrot Set</a> is the set of complex numbers <i>c</i> for which the polynomial  <i>z<sub>n + 1</sub> = z<sub>n</sub><sup>2</sup> + c</i>  remains bounded (as <i>n</i> goes from zero to infinity).  This means the number 1 is not part of this set, for example. </p>
+                <ul> 
+                    <span>For <i>c</i> = 1: </span>
+                    <li><i>n</i> = 0, 0<sup>2</sup> + 1 = 1</li>
+                    <li><i>n</i> = 1, 1<sup>2</sup> + 1 = 2</li>
+                    <li><i>n</i> = 2, 2<sup>2</sup> + 1 = 5</li>
+                    <li><i>n</i> = 3, 5<sup>2</sup> + 1 = 26</li>
+                    <li>...</li>
+                </ul>
+                <p>Clearly, for <i>c</i> = 1, the polynomial is not bounded, instead it increases infinitely.  Complex numbers close to the edge of the Mandelbrot set may seem bounded, with many iterations required to tell if they are or not.</p>
+                <p><a href="https://www.youtube.com/watch?v=NGMRB4O922I">This video by Numberphile</a> has a great easy to understand explanation.</p> 
+                <h2>Demonstrations</h2>
+                <p>The method used below to plot the Mandelbrot Set is an implementation of the <a href="https://en.wikipedia.org/wiki/Mandelbrot_set#Escape_time_algorithm">escape time algorithm</a>.  Each pixel is given a point coordinate. The number of iterations it takes for a point to exceed a magnitude of 2 determines the color of the point on the image.  If the maximum number of iterations is reached and the magnitude is less than 2, the point is considered part of the set and colored accordingly.  Fewer iterations makes for a blocky, inaccurate graph with fewer colors, but the tradeoff is that very many iterations will be very slow.</p>
+                <h3><a href="mandel1.html">Increasing Iterations</a></h3>
+                <p>Each click increases the number of maximum iterations used.</p>
+                <h3><a href="mandel2.html">Zoom(30 Iterations)</a></h3>
+                <p>This demonstration is locked at a maximum of 30 iterations, giving a good tradeoff of accuracy and speed.  Clicking a point on the image will zoom in by 2x, centered on the point clicked.</p>
+                <h3><a href="mandel3.html">Zoom(100 Iterations)</a></h3>
+                <p>Same as the previous demo, but with 100 iterations for a much more accurate image.  However, processing time is higher.</p>
+            </main>
+        </div>
+        <footer class="borderDecoration">
+            <p><span>&copy;2015 John Jenson</span>
+                <span class="hubLink">Hosted on <a href="#">Raspberry Pi server jPi</a></span>
+            </p>   
+        </footer>
+    </body>
+</html>

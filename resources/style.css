@@ -1,0 +1,114 @@
+/*
+Color Palette
+    #0A293D
+    #FFFFFF
+    #C2E7FF
+    #FFA729
+    #2E2923
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+    background-color: #0A293D;
+    font-size: 18px;
+    font-family: Roboto, arial, sans-serif;
+    color: #2E2923;
+    line-height: 1.5em;
+}
+.borderDecoration {
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px #FFFFFF, 2px 2px 5px black;
+}
+.container {
+    width: 940px;
+    height:auto;
+    margin: 20px auto 20px auto;    
+}
+header {
+    width: 940px;
+    margin: 0 auto 0 auto;
+    height: 150px;
+    background-color: #C2E7FF;
+    background: linear-gradient(#FFFFFF,#BAE5F5);
+    text-align: center;
+}
+header h2 {
+    font-weight: lighter;
+    margin-top: 40px;
+    color: #0A293D
+    font-size: 24px;
+}
+header h1 {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
+    font-family: "Roboto Slab", georgia, serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 35px;
+    margin: 0;
+}
+nav {
+    width: 220px;
+    display: table-cell;
+    background-color: #C2E7FF;
+}
+nav ul {
+    list-style: none;
+    padding-left: 20px;
+
+}
+
+/*a { text-decoration: none }*/
+a:link, a:visited {
+    color: darkblue;
+}
+a:hover {
+    color:#FFA729;
+}
+
+div.spacer{
+    width: 20px;
+    display: table-cell;
+}
+main {
+    height: 500px;
+    width: 700px;
+    display: table-cell;
+    padding: 10px 50px 10px 50px;
+    background-color: #C2E7FF;
+}
+footer {
+    width: 940px;
+    margin: 0 auto 0 auto;
+    height: 50px;
+    padding-left: 20px;
+    background-color: #C2E7FF;
+}
+footer p {
+    width: 100%;
+    padding-top: 12px;
+}
+.hubLink {
+    float: right;
+    padding-right: 20px;
+}
+
+.about {
+    width: 700px;
+    padding-left: 20px;
+    background-color: #C2E7FF;
+}
+.lavaman {
+    width: 800px;
+    padding-left: 20px;
+    background-color: #FFA729;
+    color: #0A293D;
+}
+.lavaman a:hover {
+    color: #C2E7FF;
+}

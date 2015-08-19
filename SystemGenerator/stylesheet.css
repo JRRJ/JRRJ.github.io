@@ -1,0 +1,40 @@
+body{
+	background-color: #48E;
+	font-family: "Lucida Console", monospace;
+}
+
+button{
+	background-color:
+}
+
+.infobox {
+	display: none;
+	margin-top: 15px;
+	padding: 10px;
+	width: 200px;
+	background-color: #CCE;
+}
+
+.star {
+	margin: 10px;
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	background-color:yellow;
+}
+
+.sol {
+	left: 150px;
+	margin: 10px;
+	border-radius: 50%;
+	width:111px;
+	height:111px;
+	background-color:yellow;
+	border-width: 2px;
+	border-style: solid;
+	border-color: yellow;
+	position:absolute;
+	text-align: center;
+	line-height:100px;
+	opacity: 0.5;
+}
